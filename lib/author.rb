@@ -3,10 +3,9 @@ class Author
   
   def initialize(name) 
     @name = name 
-    @posts = []
   end 
   
   def posts
-   @@all.
+   Post.select {|post| 
   end 
 end 

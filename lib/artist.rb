@@ -19,6 +19,7 @@ class Artist
   
   def add_song_by_name(song_name)
     song.Song.new(song_name)
+    song.artist = self  
     add_song(song)
     @@song_count += 1 
   end 

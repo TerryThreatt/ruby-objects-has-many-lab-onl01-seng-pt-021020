@@ -2,10 +2,11 @@ class Author
   attr_accessor :posts, :name  
   
   def initialize(name) 
-    @name = name 
+    @name = name
+    @posts = []
   end 
   
   def posts
-   Post.select {|post| post.author = self}
+   @posts
   end 
 end 

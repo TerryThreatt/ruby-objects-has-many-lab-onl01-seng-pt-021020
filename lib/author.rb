@@ -1,5 +1,5 @@
 class Author 
-  attr_accessor :posts, :author, :name  
+  attr_accessor :posts, :name  
   
   def initialize(name) 
     @name = name 
